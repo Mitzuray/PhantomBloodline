@@ -31,19 +31,18 @@
             margin: 20px 0;
             font-style: italic;
         }
-        .buttons {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .buttons button {
-            padding: 20px 40px;
-            font-size: 18px;
+        .google-button {
+            background-color: #fff;
             border: none;
-            cursor: pointer;
-            margin: 20px 10px; /* Ajustei a margem vertical */
             border-radius: 5px;
-            background-color: #ffde00;
-            color: #121212;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .google-button img {
+            max-width: 24px;
+            vertical-align: middle;
+            margin-right: 10px;
         }
         .about {
             max-width: 800px;
@@ -76,8 +75,18 @@
         Aventure-se em um mundo de mistérios e poderes sobrenaturais!
     </div>
     <div class="buttons">
-        <a href="register.html"><button>Registrar com Google</button></a>
-        <a href="login.html"><button>Login com Google</button></a>
+        <a href="https://accounts.google.com/o/oauth2/auth?client_id=SEU_CLIENT_ID&redirect_uri=SUA_URL_DE_REDIRECIONAMENTO&scope=email%20profile&response_type=code">
+            <button class="google-button">
+                <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="Registrar com Google">
+                Registrar com Google
+            </button>
+        </a>
+        <a href="https://accounts.google.com/o/oauth2/auth?client_id=SEU_CLIENT_ID&redirect_uri=SUA_URL_DE_REDIRECIONAMENTO&scope=email%20profile&response_type=code">
+            <button class="google-button">
+                <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="Login com Google">
+                Login com Google
+            </button>
+        </a>
     </div>
     <div class="about">
         <h2>Sobre</h2>
@@ -87,5 +96,4 @@
         &copy; 2023 Phantom Bloodline. Todos os direitos reservados.
     </div>
 </body>
-      </html>
-      
+</html>
